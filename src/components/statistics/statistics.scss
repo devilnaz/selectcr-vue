@@ -1,0 +1,44 @@
+$main-font: "Geometria";
+
+.column {
+  @media (max-width: 768px) {
+    &:first-child {
+      margin-top: 0;
+    }
+    margin-top: 32px;
+  }
+  &__title {
+    margin: 0;
+    text-transform: uppercase;
+    font: 700 20px/20px $main-font;
+    color: #152831;
+    border-bottom: 4px solid #9c1421;
+    padding-bottom: 12px;
+    width: min-content;
+    @media (max-width: 768px) {
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
+  &__list {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+  &__item {
+    margin-top: 12px;
+  }
+}
+
+.info-cell {
+  display: flex;
+  &__percentage {
+    font: 700 18px/24px $main-font;
+    color: #152831;
+  }
+  &__value {
+    margin-left: 8px;
+    font: 400 18px/23px $main-font;
+    color: #667185;
+  }
+}

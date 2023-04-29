@@ -1,0 +1,62 @@
+
+$main-font: "Geometria";
+.indicators {
+  width: 546px;
+  background: rgba(243, 244, 246, 1);
+  padding: 18px 18px 23px 2.5%;
+  @media (max-width: 1200px) {
+    box-sizing: border-box;
+  }
+  &__headlines {
+    display: flex;
+    align-items: center;
+  }
+  .headlines__cell:nth-child(1) {
+    font: 700 18px/24px $main-font;
+    color: rgba(156, 20, 33, 1);
+    flex-grow: 1;
+  }
+  .headlines__cell:nth-child(2),
+  .headlines__cell:nth-child(3) {
+    font: 500 12px/15px $main-font;
+    text-align: center;
+    width: 90px;
+    flex-shrink: 0;
+    margin-left: 29px;
+    color: rgba(102, 113, 133, 1);
+  }
+  .headlines__cell:nth-child(2) {
+    color: rgba(156, 20, 33, 1);
+  }
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-top: 19px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+  }
+  &__item:first-child {
+    margin-top: 0;
+  }
+  &__item-img {
+    margin-right: 8px;
+  }
+  &__item-title {
+    flex-grow: 1;
+  }
+  &__item-percentage {
+    width: 90px;
+    flex-shrink: 0;
+    font: 700 20px/20px $main-font;
+    color: rgba(102, 113, 133, 1);
+    text-align: center;
+    margin-left: 29px;
+  }
+  &__item-percentage_main {
+    color: rgba(156, 20, 33, 1);
+  }
+}

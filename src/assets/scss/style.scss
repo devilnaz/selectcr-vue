@@ -1,0 +1,94 @@
+@import "fonts.scss";
+$main-font: "Geometria";
+
+.selectcr-page {
+  margin: 0;
+  &__inner {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+
+
+.section {
+  &__inner {
+    margin-top: 32px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    @media (max-width: 768px) {
+      margin-top: 16px;
+    }
+  }
+  &__title {
+    margin: 0;
+    font: 700 48px/60px $main-font;
+    color: rgba(21, 40, 49, 1);
+    @media (max-width: 768px) {
+      font-size: 28px;
+      line-height: 38px;
+      color: rgba(156, 20, 33, 1);
+    }
+  }
+  &__title_highlight {
+    color: rgba(156, 20, 33, 1);
+    @media (max-width: 768px) {
+      color: rgba(21, 40, 49, 1);
+    }
+  }
+
+  &__statistics {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 32px;
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      margin-top: 10px;
+      column-gap: 0;
+      @media (max-width: 768px) {
+        margin-top: 16px;
+      }
+    }
+  }
+  &__indicators {
+    margin-top: 47px;
+    @media (max-width: 992px) {
+      background: rgb(243, 244, 246);
+    }
+    @media (max-width: 768px) {
+      display: none;
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  &__background {
+    padding-bottom: 110px;
+    position: relative;
+    @media (max-width: 992px) {
+      padding-bottom: 27px;
+    }
+    @media (max-width: 768px) {
+      margin-top: 32px;
+    }
+  }
+  &__wrapper-image {
+    max-width: 506px;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 16px;
+    @media (max-width: 992px) {
+      max-width: 400px;
+      position: initial;
+      z-index: 0;
+      margin: 0 auto;
+    }
+  }
+  &__image {
+    width: 100%;
+    display: block;
+  }
+}
+
+
