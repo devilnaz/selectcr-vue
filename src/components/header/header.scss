@@ -8,10 +8,11 @@
     justify-content: space-between;
     align-items: center;
   }
-  &__logo {
-    display: inline-block;
-  }
-  &__logo-img {
+}
+
+.logo {
+  display: inline-block;
+  &__img {
     display: block;
   }
 }

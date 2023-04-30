@@ -1,8 +1,10 @@
 <template>
   <header class="header">
         <div class="header__inner">
-          <div class="header__logo">
-            <img src="../../assets/images/logo-company.svg" alt="Logo: SelectCR.ru" class="header__logo-img" />
+          <div class="logo">
+            <a href="/">
+              <img src="../../assets/images/logo-company.svg" alt="Logo: SelectCR.ru" class="logo__img" />
+            </a>
           </div>
           <nav class="header__navigate">
             <div class="menu">

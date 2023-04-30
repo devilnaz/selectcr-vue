@@ -1,4 +1,4 @@
-<style lang="scss" src="./assets/scss/style.scss"></style>
+<style lang="scss" src="./assets/scss/app.scss"></style>
 
 <template>
   <div class="selectcr-page__inner">
@@ -6,16 +6,10 @@
     <main class="content">
       <div class="section">
         <div class="section__inner">
-          <h1 class="section__title">
-            <span class="section__title_highlight">Центральная россия —</span> 1/3 экономики страны
-          </h1>
-          <div class="section__statistics">
-            <Statistics />
-          </div>
+          <h1 class="section__title"><span class="section__title_highlight">Центральная россия —</span> 1/3 экономики страны</h1>
+          <Statistics />
         </div>
-        <div class="section__indicators">
-          <Indicators :title="allData" />
-        </div>
+        <Indicators />
         <div class="section__inner">
           <div class="section__background">
             <div class="section__wrapper-image">
@@ -29,10 +23,7 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
 import Header from "./components/header/Header.vue";
 import Indicators from "./components/indicators/Indicators.vue";
 import Statistics from "./components/statistics/Statistics.vue";
-
-
 </script>

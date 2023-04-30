@@ -1,5 +1,4 @@
 @import "fonts.scss";
-$main-font: "Geometria";
 
 .selectcr-page {
   margin: 0;
@@ -8,8 +7,6 @@ $main-font: "Geometria";
     margin: 0 auto;
   }
 }
-
-
 
 .section {
   &__inner {
@@ -37,31 +34,6 @@ $main-font: "Geometria";
     }
   }
 
-  &__statistics {
-    margin-top: 32px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 32px;
-    @media (max-width: 768px) {
-      grid-template-columns: 1fr;
-      margin-top: 10px;
-      column-gap: 0;
-      @media (max-width: 768px) {
-        margin-top: 16px;
-      }
-    }
-  }
-  &__indicators {
-    margin-top: 47px;
-    @media (max-width: 992px) {
-      background: rgb(243, 244, 246);
-    }
-    @media (max-width: 768px) {
-      display: none;
-      opacity: 0;
-      visibility: hidden;
-    }
-  }
   &__background {
     padding-bottom: 110px;
     position: relative;
@@ -90,5 +62,3 @@ $main-font: "Geometria";
     display: block;
   }
 }
-
-
