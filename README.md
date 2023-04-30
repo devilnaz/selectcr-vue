@@ -1,18 +1,16 @@
-## Build Setup:
+## Использовано
+* Webpack 5
+* Vue 3 - Composition API
+* Pinia
 
+## Настройки сборки  
 ```
-# Download repository:
-git clone https://github.com/vedees/webpack-template webpack-template
-
-# Go to the app:
-cd webpack-template
-
-# Install dependencies:
+# Установить зависимости:
 npm install
 
-# Server with hot reload at http://localhost:8081/
+# Сервер с горячей перезагрузкой в http://localhost:8081/
 npm run dev
 
-# Output will be at dist/ folder
+# Вывод будет в dist
 npm run build
 ```

@@ -17,6 +17,6 @@
 </template>
 
 <script setup>
-import { sectionStore } from "../../stores/section";
+import { sectionStore } from "../../stores/russian";
 const data = sectionStore();
 </script>
