@@ -1,7 +1,8 @@
 ## Использовано
 * Webpack 5
-* Vue 3 - Composition API
+* Vue 3 - Composition API - SFC
 * Pinia
+* Препроцессор Sass - синтаксис scss
 
 ## Настройки сборки  
 ```

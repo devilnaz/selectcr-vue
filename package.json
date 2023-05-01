@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --open --config ./build/webpack.dev.conf.js",
     "build": "webpack --config ./build/webpack.build.conf.js",
-    "deploy": "gh-pages -d build"
+    "deploy": "webpack --config ./build/webpack.build.conf.js && gh-pages -d dist"
   },
   "browserslist": [
     "> 1%",

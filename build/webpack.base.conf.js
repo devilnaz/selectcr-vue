@@ -1,6 +1,7 @@
 const { VueLoaderPlugin } = require("vue-loader");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 const path = require("path");
 
 const PATHS = {
@@ -92,6 +93,14 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: `${PATHS.src}/index.html`,
       filename: "./index.html",
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: `${PATHS.src}/static`,
+          to: "",
+        },
+      ],
     }),
   ],
 };

@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper-indicators">
-    <div class="indicators" v-if="data">
+    <div class="indicators" v-if="data.indicators">
       <div class="indicators__headlines">
         <div class="headlines__cell">Рост за 2019 год</div>
         <div class="headlines__cell">Центральная Россия</div>
